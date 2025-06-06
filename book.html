@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Image in Marquee - Right Aligned</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h2 {
+      font-weight: bold;
+    }
+
+    p {
+      text-align: justify;
+      max-width: 1000px;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+      padding: 10px;
+
+      display: flex;
+      justify-content: flex-end; 
+    }
+
+    .marquee-images {
+      display: inline-block;
+      animation: scroll 20s linear infinite;
+    }
+
+    .marquee-images img {
+      height: 200px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image in Marquee </h2>
+
+  <p>
+    On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document.
+    You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks.
+    When you create pictures, charts, or diagrams, they also coordinate with your current document look. 
+    You can easily change the formatting of selected text in the document text by choosing a look for the selected text from the Quick Styles gallery.
+  </p>
+
+  <div class="marquee-container">
+    <div class="marquee-images">
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+      <img src="book.png" alt="Book Image" />
+    </div>
+  </div>
+
+</body>
+</html>
